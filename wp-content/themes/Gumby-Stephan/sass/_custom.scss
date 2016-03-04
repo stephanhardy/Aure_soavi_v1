@@ -1,0 +1,700 @@
+// Your custom SCSS should be written here...
+
+
+/*General */
+
+
+
+@import "../bower_components/gumby-parallax/_parallax.scss"; 
+
+html {
+	height:auto;
+}
+
+
+
+a:link  {
+	text-decoration: none;
+	-webkit-transition: color .5s ease 0s;
+	-moz-transition: color .5s ease 0s;
+	-o-transition: color .5s ease 0s;
+	-ms-transition: color .5s ease 0s;
+	transition: color .5s ease 0s;
+}
+
+
+
+a:active, a:hover   {
+	border-bottom: 1px solid $body-link-hover-color;	
+	outline: 0 none;
+}
+
+
+
+/***Primary Navigation ***/
+
+ul#navbar li.menu-item > a {
+	padding: 0 0;
+	margin: 0px 15px 20px;
+	display:inline;
+}
+
+ul#navbar li.menu-item a:hover {
+	color:$body-link-hover-color;
+	
+}
+
+ul#navbar li.menu-item  {
+	transition: padding .5s ease 0s;
+}
+	
+
+
+ul#navbar li.current-menu-item > a{
+	display:inline;
+	border-bottom: 1px solid $body-link-hover-color;
+	color:$body-link-hover-color;
+	text-shadow: none;
+	
+}
+
+
+.navbar, .logo_wp, .banner_wp, #header {
+	margin-bottom:0px;
+	background: rgba(0,0,0, .75);
+
+}
+ul#navbar {
+	float:right;
+}
+
+h1.three.columns.push_left {
+	padding-bottom:0em;
+	font-size: 2em;
+	font-weight:thin;
+	height:60px;
+	margin: 0 auto;
+	padding-left: em(20px);
+	
+}
+
+h1.three.columns.push_left > a {
+	color:#33ccff;
+}
+				/*  affects navbar header AURA SOAVE*/
+
+h1.three.columns.push_left a:active, a:hover  {
+	border-bottom: 1px solid #33ccff;	
+	outline: 0 none;
+}
+
+
+.gumby-no-touch .navbar ul li:hover > a {
+	background-color: inherit;	
+	}
+
+
+.gumby-touch .navbar ul li.active > a {
+color: inherit;
+	
+}
+
+
+#nav1 {
+	text-decoration: none;
+	border-bottom: 20px;	
+	
+}
+	
+
+
+
+
+
+	/*Sticky Posts - home page*/
+
+#sticky {
+		background-color:#fff; 
+			
+	}
+
+#sticky-posts {
+		
+		padding-top: 10px;
+		padding-bottom: 30px;
+
+	}
+
+#sticky-posts a:hover {
+	border-style:none;
+	color: inherit;
+	
+}	
+
+#sticky-posts article:active {
+	border-style:none;
+	color: inherit;
+	
+}
+
+#sticky-posts img:hover  {
+	opacity: .75;
+	transition: opacity 0.5s ease-in 0s;
+	
+}
+
+#sticky	article.four.columns {
+		margin-left:  0.7%;
+		margin-right: 0.7%;
+		-webkit-box-shadow: 0px 31px 22px -3px #C7C7C7;
+		box-shadow: 0px 31px 22px -3px #C7C7C7;
+
+	}
+
+
+
+#sticky-posts .four  {
+	background-color: #fff ; 
+    background: none repeat scroll 0 0 rgba(255, 255, 255, 0.55);
+    padding: 8px;
+    margin-bottom:10px;
+    text-align:justify;
+}
+	
+
+#sticky-posts .four h2 {
+	text-align: center;
+	font-weight: $font-weight-thin;
+	font-size: $large;
+}	
+
+#sticky-posts  .four h1 {
+		font-size:24px;
+		
+	
+	}
+
+#sticky-posts .four p {
+		font-size:$norm;
+		
+	}	
+
+
+	/*Teasers (Featured Posts) */
+
+#teasers .four h1 {
+		font-size:24px;
+	
+	}
+
+	#teasers .four p {
+		font-size:12px;
+		
+	}
+
+article.four.columns {
+		
+		-webkit-box-shadow: 0px 31px 22px -3px #C7C7C7;
+		box-shadow: 0px 31px 22px -3px #C7C7C7;
+	}
+
+
+#teasers {
+		margin-top: 20px;
+		padding-top: 20px;
+		padding-bottom: 20px;
+		
+	}	
+
+
+
+/* Categories */
+
+.imgss img:hover  {
+	opacity: .75;
+	transition: opacity 0.5s ease-in 0s;
+	
+}
+
+
+
+#category  a:hover {
+	border-style:none;
+	color: inherit;
+	
+}
+
+#category  div:active {
+	border-style:none;
+	color: inherit;
+	
+}
+.content p {
+	color: #444444;
+	
+}
+
+
+
+/*Footer*/
+
+#footer {
+	margin-top: 0px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	background-color: $dark-gray;
+		
+	
+	}
+
+div.container.footer {
+	max-width: 100% !important;
+	background-color: $dark-gray; 
+}
+
+#footer .three p,  #footer .three ul li, div.row.search  {
+	font-size: medium;	
+	border-bottom: 1px solid #444444;
+	color: white;
+	line-height: em(25px);
+	padding-top: em(3px);
+	padding-bottom: em(4px);	
+	}	
+
+
+#footer h4 	{
+	font-weight: normal;	
+	border-bottom: 2px solid #444444;
+	color:white;
+	font-size: medium;
+	line-height: em(25px);
+	margin-bottom: em(3px);
+	margin-top: em(20px);
+	padding: 0 0 em(10px);	
+	}	
+
+section#tagtom.row { 
+	background-color:black;
+	max-width: 100% !important;
+	height: 6em;
+	padding:20px;
+	}
+
+#footer section.three.columns { 
+	margin-bottom: em(40px);
+	}
+
+
+/*Search Form Styles - home-page-template.php*/
+
+div.search-div 	{
+	background-color:$dark-gray;
+	}
+
+form.search_form  {
+	margin-top: -.08em;
+	margin-bottom: -.64em;
+}
+
+i.icon-search 	{
+	position:absolute;
+	color:gray;
+	}
+
+input#s.search-field  {
+	background-color: black !important;
+	font-size:16px;
+	font-style:white;
+	padding-left:10%;
+	padding-right: 12%; 
+	border-color: black;
+	color: white !important;
+	margin-left: .2em;
+	max-width: 97% !important;
+	border-radius: 0em !important;
+	-webkit-border-radius: 0em !important;
+	}
+
+
+			/*Hack for Firefox - input search */
+@-moz-document url-prefix() {
+    input#s.search-field   {
+          	margin-left: 0.3em;
+    		max-width: 95%;
+    		padding-right: 0;
+    	}
+	}
+
+input#searchsubmit  {
+	position:absolute;
+	left:-9999px;
+	}
+
+
+
+
+		
+/** SINGLE POST PAGE  single.php */
+
+
+article.post a:link {
+	color: $body-link-hover-color;
+	border-bottom: 1px solid $body-link-hover-color;	
+	outline: 0 none;
+}
+
+article.post  a:hover  {
+	color:#444;
+	border-bottom: 1px solid #444444;
+
+}
+
+article.post {
+	text-align: justify;
+	margin-top: 4%;
+
+}
+
+
+i.icon-feather {
+	font-size: 3em;
+	float: left;
+	padding: .26em;
+}
+
+#post-content-single-div {
+		margin-top: 20px;
+		padding-top: 20px;
+		padding-bottom: 20px;
+	
+	}	
+
+
+
+#post-content-single-div.row  {
+	padding-top: 7%;
+		
+	}
+
+/** POST LISTINGS (index.php) NAVIGATION & COMMMENTS **/
+
+
+#posts-listings.row {
+	padding-top: 7%;
+	padding-bottom: 4%;
+		
+	}
+
+			/* deactivate link in header*/
+
+.posts-listings-header a {
+	pointer-events: none;
+    cursor: default;
+    color: #444444;
+    padding-bottom: 0em;
+}	
+
+.posts-listings-header  li {
+    padding-bottom: 0em !important;
+}	
+img.attachment-thumbnail 	{
+	border:0px !important;
+		
+	}
+
+h3.assistive-text, nav.nav-single,  label.comment_form {
+	position:absolute;
+	left:-9999px;
+	}
+
+section#post-content.eight.columns ol {
+	text-decoration:none;
+		
+	}
+
+li.comment_list, p.meta	{
+	list-style-type:none;
+		
+	}
+
+div.comments-list.row.twelve.columns {
+	margin-left:0em !important;
+		
+	}
+
+
+p.meta	{
+	text-align:right;
+		
+	}
+
+section#post-content.eight.columns div.content {
+	padding-bottom: 5%;
+		
+	}
+
+li.comment_list {
+	margin-top: 1em;
+	margin-bottom: 1em;
+	padding: 1em;
+	background-color: #F7F7F7;	
+	}
+
+
+.input {
+	max-width: 25em !important;
+	border-radius: 0em !important;
+	-webkit-border-radius: 0em !important;
+	}
+
+
+.btn.default:hover {
+	cursor: pointer;
+	
+	}
+
+section#post-content.eight.columns a:link, aside a:link {
+	color: $body-link-hover-color;
+	border-bottom: 1px solid $body-link-hover-color;	
+	outline: 0 none;
+}
+
+section#post-content.eight.columns a:hover  {
+	color:#444;
+	border-bottom: 1px solid #444444;
+
+}
+
+/* Categories Page (index.php) */
+
+#img-category  {
+   margin-left:0px;
+   clear:left;
+    
+    
+}
+
+.imgss img {
+    width:30%;
+    height: 30%;
+    float:left;
+    margin:.5em .5em .02em 0em;
+    margin-left:0px;
+
+    
+}
+	/* Full Post Pages (page.php) */
+
+
+#page-div .row {
+	padding-bottom: 20px;
+		
+	}
+
+
+#page-div.row {
+	padding-top: 7%;
+		
+	}
+
+#page-div.row h1 {
+	text-transform: lowercase;
+		
+	}
+
+
+/*CONTACT FORM - on page.php */
+
+p img#captcha {
+	text-align:center;
+		
+	}
+
+
+p.metro.input.contact input, p.metro.input.contact textarea, input#data-captcha {
+position: relative;
+padding: 0 10px;
+background: #fff;
+border: 1px solid #d8d8d8;
+line-height: 34px;
+font-size: 16px;
+font-size: 1rem;
+transition-duration: 0.2s;
+width: 100%;
+margin:0em;
+outline:none;
+box-shadow:none;
+resize: none;
+-webkit-appearance: none;
+font-family: "Open Sans";
+font-weight: 300;
+max-width: 25em !important;
+border-radius: 0em !important;
+-webkit-border-radius: 0em !important;
+box-sizing:border-box;
+}
+
+
+p.metro.input.contact input{
+
+height: 36px; 
+
+}	
+
+p.metro.input.contact textarea {
+
+height: auto;
+
+}
+
+p.metro.submit.contact input {
+
+line-height: 34px;
+font-size: 16px;
+font-size: 1rem;
+transition-duration: 0.2s;
+margin:0em;
+outline:none;
+box-shadow:none;
+resize: none;
+-webkit-appearance: none;
+font-family: "Open Sans";
+font-weight: 300;
+max-width: 25em !important;
+border-radius: 0em !important;
+-webkit-border-radius: 0em !important;
+box-sizing:border-box;
+background: #f2f2f2;
+border: 1px solid #f2f2f2;
+color: #555555;
+height: 36px;
+line-height: 34px;
+width: 30.66667%;
+}
+
+
+
+p.metro.submit input:hover 
+ {
+border: 1px solid #e5e5e5;
+background:white;
+cursor: pointer; 
+}
+
+
+
+
+
+
+/*Parallax - on HOME PAGE */
+
+#homepagewidget article {
+	padding-left:5%;
+	padding-right:5%;	
+	}
+#homepagewidget h1, #homepagewidget h2  {
+	color: white !important;
+	text-align: center;	
+	}
+
+
+.parallax {
+	/*background-size: auto 900px; */
+	width:1700px;
+	max-width: 100%;
+	height: auto;
+	background-repeat: no-repeat;
+	&#one {background-image: url(../img/Aure_soavi_forest_scene_sans_texte1553x1000px.jpg);
+		}
+	}
+
+
+.parallax2 {
+	background-size: auto 1000px;
+	background-repeat: no-repeat;
+	&#one {background-image: url(../img/DeathtoStock_Wired3.jpg);
+		}
+	}
+	
+
+
+.margin {
+	margin: 400px auto 400px;
+	padding: 40px;
+		article {
+			background: rgba(255,255,255,.15);
+			padding: 20px;
+			text-align: justify;
+
+		}
+}
+
+.skiplink {
+	background: none;
+}
+
+
+
+
+h1.togg1 {
+	-webkit-transform: scale(1);
+           transform: scale(1);
+           opacity: 1;
+           cursor:pointer;
+           -webkit-transition: all 400ms ease;
+                   transition: all 400ms ease;
+           &.togg1.active {
+			-webkit-transform: scale(0);
+			 		transform: scale(0);
+					opacity: 0;
+
+           				}
+
+  	}
+
+
+p.togg1 {
+   -webkit-transform: scale(0);
+           transform: scale(0);
+           opacity: 0;
+           margin-top:-80px;
+           cursor:pointer;
+           -webkit-transition: all 400ms ease;
+                   transition: all 400ms ease;
+           &.togg1.active {
+			-webkit-transform: scale(1);
+			 		transform: scale(1);
+					opacity: 1;
+
+           }
+
+  	}
+
+
+
+@media only screen and (max-width: 767px) {
+	
+.container {
+width: auto;
+min-width: 0;
+margin-top: 0;
+margin-bottom: 0;
+}
+
+.margin {
+width: auto;
+min-width: 0;
+margin-left: 0;
+margin-right: 0;
+}
+
+/**
+
+.parallax .parallax2 {
+	background-size: auto 1400px;
+}
+**/
+
+}
+
+
